@@ -1,0 +1,500 @@
+   94  cd blog
+   95  cd oct14
+   96  rails s
+   97  cd ..
+   98  cd ..
+   99  cd Rubyist
+  100  rails s
+  101  cd ..
+  102  cd ..
+  103  cd git
+  104  cd blog
+  105  cd oct14
+  106  rails s
+  107  cd ..
+  108  cd ..
+  109  cd Rubyist
+  110  rails s
+  111  ls
+  112  cd Desktop
+  113  ls
+  114  cd ruby_trial
+  115  ls
+  116  ls
+  117  ruby enc.rb
+  118  ruby enc.rb
+  119  ruby enc.rb
+  120  irb
+  121  Array.new(3) { |i| 10 * (i + 1) 
+  122  irb
+  123  cd Desktop
+  124  cd rails
+  125  cd blog
+  126  ls
+  127  cd git
+  128  cd blog
+  129  cd oct14
+  130  git add .
+  131  git commit -m "modified the content part to be compatible with the code"
+  132  git push origin master 
+  133  cd ..
+  134  cd ..
+  135  cd Rubyist
+  136  rails c
+  137  git add .
+  138  git commit -m "modified to add code block(add type, changed field->area, code-prettify)"
+  139  git push origin master
+  140  git add .
+  141  git commit -m "changed the form from text_field to text_area"
+  142  git push origin master
+  143  git add .
+  144  git commit -m "Chapter9-10.2"
+  145  git push origin master
+  146  git add .
+  147  git commit -m "by chapter 10-3"
+  148  git push origin master
+  149  states = %w(NJ NY CT MA VT FL)
+  150  irb
+  151  irb
+  152  irb
+  153  irb
+  154  ["USA", "UK", "France", "Germany"].select {|c| /[a-z]/ === c }
+  155  irb
+  156  cd Desktop
+  157  cd rails
+  158  cd git
+  159  cd Rubyist
+  160  git add .
+  161  git commit -m "regexp about modifiers"
+  162  git push master origin
+  163  git push  origin master
+  164  irb
+  165  cd Desktop
+  166  cd blog
+  167  cd rails
+  168  cd git
+  169  cd blog
+  170  cd ..
+  171  cd Rubyist
+  172  rails s
+  173  rails s
+  174  cd ..
+  175  cd blog
+  176  cd oct14
+  177  rails s
+  178  cd ..
+  179  cd ..
+  180  cd Rubyist
+  181  rails s
+  182  cd ..
+  183  cd blog
+  184  cd oct14
+  185  git add .
+  186  git commit -m "modified meal type by enum"
+  187  git push origin master
+  188  git add .
+  189  git commit -m "chapter 12(file and I/O)"
+  190  cd ..
+  191  cd ..
+  192  cd Rubyist
+  193  git add .
+  194  git commit -m "chapter 12(file and I/O)"
+  195  git push origin master 
+  196  irb
+  197  class Ticket
+  198  class << self
+  199  irb
+  200  irb
+  201  irb
+  202  cd Desktop
+  203  cd rails
+  204  cd git
+  205  cd Rubyist
+  206  git add .
+  207  git commit -m "chapter 13.2"
+  208  git push origin master
+  209  obj.class.ancestors.lastobj.class.ancestors.lastobj.class.ancestors.last
+  210  irb
+  211  irb
+  212  irb
+  213  ruby -e 'o = Object.new; p o.private_methods.size'
+  214  ruby -e 'o = Object.new; p o.protected_methods.size'
+  215  0
+  216  ruby -e 'o = Object.new; p o.private_methods -
+  217  BasicObject.private_instance_methods(false) -
+  218  Kernel.private_instance_methods(false)'
+  219  ruby -e 'o = Object.new; p o.private_methods -BasicObject.private_instance_methods(false) -Kernel.private_instance_methods(false)'
+  220  ruby -e 'o = Object.new; p o.private_methods - BasicObject.private_instance_methods(false) - Kernel.private_instance_methods(false)'
+  221  irb
+  222  git add .
+  223  git commit -m "till chapter 15"
+  224  git push origin master
+  225  irb
+  226  irb
+  227  cd Desktop
+  228  cd git
+  229  cd rails
+  230  cd git
+  231  cd Rubyist
+  232  git add .
+  233  git commit -m "completed whole book ;)"
+  234  git push origin master
+  235  cd Desktop
+  236  cd rails
+  237  cd git
+  238  cd Rubyist
+  239  rails s
+  240  irb
+  241  irb
+  242  irb
+  243  irb
+  244  irb
+  245  cd Desktop
+  246  cd rails
+  247  cd git
+  248  cd Rubyist
+  249  git add .
+  250  git commit -m "added chapters and pages"
+  251  git push origin master
+  252  echo "hello, world"
+  253  brew tap heroku/brew && brew install heroku
+  254  heroku -v
+  255  heroku login
+  256  heroku login -i
+  257  ls
+  258  cd Desktop
+  259  cd rails 
+  260  ls
+  261  cd Trial2
+  262  heroku create
+  263  git remote add origin https://github.com/y1220/heroku_ex.git
+  264  git push origin master
+  265  git add .
+  266  git commit -m "first commit"
+  267  git push origin master
+  268  git push heroku master
+  269  heroku addons
+  270  heroku addons:create heroku-postgresql:Heroku_ex
+  271  heroku addons
+  272  heroku addons:create heroku-postgresql:hobby-dev
+  273  heroku addons
+  274  git push heroku master
+  275  bundle install
+  276  git push heroku master
+  277  git push heroku master
+  278  bundle install
+  279  gem install pg -v '1.2.3
+  280  'quit
+  281  gem install pg -v '1.2.3'
+  282  sudo gem install pg -v '1.2.3'
+  283  git push heroku master
+  284  rake db:create
+  285  db:migrate
+  286  rails db:migrate
+  287  bundle install
+  288  git push heroku master
+  289  git push heroku master
+  290  git add .
+  291  git commit -m "changed the database sqlite -> postgresql"
+  292  git push origin master
+  293  git push heroku master
+  294  heroku logs --tail
+  295  heroku pg:info
+  296  heroku pg:psql
+  297  heroku run rake db:migrate
+  298  heroku run rails db:migrate
+  299  heroku logs --tail
+  300  heroku buildpacks:add -i 1 https://github.com/heroku/heroku-buildpack-activestorage-preview
+  301  git push heroku main
+  302  git push heroku master
+  303  heroku run bash
+  304  cretedb
+  305  psql -h localhost
+  306  cd Desktop
+  307  cd rails
+  308  cd git
+  309  cd Rubyist
+  310  rails c
+  311  git add .
+  312  git commit -m "format completed(rails tutorial)"
+  313  git push origin master
+  314  rails c
+  315  rails s
+  316  cd ..
+  317  cd ..
+  318  ls
+  319  cd Trial2
+  320  rials s
+  321  rails s
+  322  cd ..
+  323  cd git
+  324  cd Rubyist
+  325  rails s
+  326  cd ..
+  327  ls
+  328  cd ..
+  329  ls
+  330  cd Trial2
+  331  rails s
+  332  rails s -b 127.0.0.1
+  333  rails s -p 5432 -b 127.0.0.1
+  334  rails s
+  335  cd ..
+  336  cd ..
+  337  cd ..
+  338  postgres -V
+  339  createuser -P -s postgres
+  340  git log
+  341  df -h
+  342  cd ..
+  343  cd git
+  344  cd Rubyist
+  345  rails s
+  346  cd .. 
+  347  ls
+  348  cd ..
+  349  ls
+  350  cd Trial2
+  351  rails s
+  352  cd ..
+  353  cd git
+  354  cd Rubyist
+  355  rails s
+  356  cd ..
+  357  cd ..
+  358  cd Trial2
+  359  rails s
+  360  cd ..
+  361  cd git
+  362  cd Rubyist
+  363  rails s
+  364  cd Desktop
+  365  cd git
+  366  cd rails
+  367  cd Trial2
+  368  rails g scffold User name:string email:string
+  369  rails g scaffold User name:string email:string
+  370  bundle install
+  371  rails g scaffold User name:string email:string
+  372  rails g scaffold User name:string email:string
+  373  raild db:migrate
+  374  rails db:migrate
+  375  rails db:migrate
+  376  rails rake
+  377  raild db:migrate
+  378  rails db:migrate
+  379  bundle install
+  380  rails db:migrate
+  381  git add .
+  382  git commit -m "Finish demo app"
+  383  git push heroku master
+  384  git push heroku master
+  385  git add .
+  386  git commit -m "removed sqlite3"
+  387  git push heroku master
+  388  git add .
+  389  git commit -m "removed completely sqlite3"
+  390  git push heroku master
+  391  bundle install --no-deployment
+  392  git add .
+  393  git commit -m "removed completely sqlite3 from Gemfile.lock"
+  394  git push heroku master
+  395  heroku run rails db:migrate
+  396  psql
+  397  brew services restart postgresql
+  398  psql
+  399  createdb
+  400  psql -h localhost
+  401  clear
+  402  heroku pg:info
+  403  heroku pg:psql
+  404  heroku run rake db:migrate
+  405  git add .
+  406  git commit -m ""modified database.yml"
+  407  git commit -m "modified database.yml"
+  408  git push origin master
+  409  git push heroku master
+  410  rails s
+  411  cd Desktop
+  412  cd rails
+  413  cd git
+  414  cd Rubyist
+  415  rails s
+  416  rails s
+  417  createuser -P -d panda
+  418  psql postgres
+  419  cd Desktop
+  420  cd rails
+  421  la
+  422  ls
+  423  rails new Panda -d=postgresql
+  424  ls
+  425  cd Panda
+  426  rails db:migrate
+  427  rails db:create
+  428  rails s
+  429  psql postgres
+  430  psql -U panda -d Panda_development -W
+  431  rails db:migrate:status
+  432  rails db:create
+  433  rails db:drop
+  434  cd ..
+  435  rails new  -d=postgresql yui_project
+  436  ls
+  437  cd yui_project
+  438  rails db:create
+  439  rails generate model User name
+  440  rails db:migrate
+  441  rben
+  442  git add .
+  443  git commit -m "till chapter 19(ch3 for rails)"
+  444  git push origin master
+  445  psql postgres
+  446  psql -U yui_project -d yui_project_development -W
+  447  ~/.bash_profile
+  448  nano ~/.bash_profile
+  449  ifconfig -a
+  450  ipconfig
+  451  ls
+  452  nano ~/.bash_profile
+  453  ls
+  454  cd Desktop
+  455  cd development
+  456  ls
+  457  cd hurricane
+  458  rails s
+  459  ls
+  460  cd Desktop
+  461  ls
+  462  cd ..
+  463  cd development/
+  464  cd hurricane/
+  465  clear
+  466  cd ..
+  467  cd ..
+  468  mv development ˜./Desktop
+  469  mv development ˜/Desktop
+  470  mv development Desktop/
+  471  ls
+  472  cd Desktop/
+  473  ls
+  474  cd development/hurricane/
+  475  git checkout -b FT-969-first-test
+  476  git branch
+  477  bundle exec db:create
+  478  bundle install 
+  479  bundle exec db:create
+  480  bin/rake db:create
+  481  clear
+  482  bin/rake copy_production_database\
+  483  bin/rake copy_production_database
+  484  bin/rake db:migrate
+  485  rails c
+  486  rails about
+  487  rake about
+  488  bin/rails db:version
+  489  rake db:version
+  490  rails c
+  491  bin/rails about
+  492  bin/rake about
+  493  rake about
+  494  rails about
+  495  bin/rake db:sattus
+  496  bin/rake db:status
+  497  bin/rake db:migrate:status
+  498  rails c
+  499  irb
+  500  cd Desktop/
+  501  ls
+  502  ls -la
+  503  bash 20140908.sh 
+  504  chmod +x 20140908.sh 
+  505  bash 20140908.sh 
+  506  bash 20140908.sh x
+  507  bash 20140908.sh development
+  508  bash 20140908.sh square.rb
+  509  bash 20140908.sh select.txt
+  510  ls
+  511  bash 20140908.sh select.txt.rtf
+  512  bash 20140908.sh select.txt
+  513  mkdir os
+  514  cd os
+  515  touch file1.txt
+  516  nano file1.txt 
+  517  cat file1.txt 
+  518  cd
+  519  ls
+  520  cd Desktop/
+  521  bash 20140908.sh os
+  522  cd os
+  523  touch file2.txt
+  524  nano file2.txt
+  525  cd ..
+  526  bash 20140908.sh os
+  527  cd os
+  528  who
+  529  groups
+  530  cd ..
+  531  ls -l
+  532  chmod -r a-r os
+  533  ls
+  534  chmod -r u-r os
+  535  chmod -h
+  536  chmod -R u-r os
+  537  sudo chmod -R u-r os
+  538  ls
+  539  ls -al
+  540  cd os
+  541  ls
+  542  cd ..
+  543  sudo chmod -R u+r os
+  544  ls -al
+  545  cd os
+  546  ls
+  547  cat file1.txt 
+  548  cd
+  549  cd Desktop/
+  550  history
+  551  550
+  552  history 550
+  553  cd os
+  554  cp file1.txt file1cp.txt
+  555  ls
+  556  cat file1cp.txt
+  557  ln file1.txt file1.hl
+  558  cat file1.hl
+  559  ln -s file1.txt file1.sl
+  560  cat file1.sl
+  561  rm file1.txt
+  562  cat file1.sl
+  563  cat file1.hl
+  564  ls -l
+  565  touch file1.txt
+  566  nano file1.txt
+  567  cat file1.sl
+  568  ls -l
+  569  ln -s file2.txt file2.sl
+  570  ls -l
+  571  diff file2.txt file2.sl
+  572  diff file2.txt file1.sl
+  573  ln  file2.txt file2.sl
+  574  ln  file2.txt file3.sl
+  575  ls -l
+  576  rm file2.txt
+  577  cat file2.sl
+  578  cat file3.sl
+  579  touch file4.txt
+  580  nano file4.txt 
+  581  ln -s file4.txt file4.sl
+  582  cat file4.sl
+  583  nano file4.txt
+  584  cat file4.txt
+  585  cat file4.sl
+  586  diff file4.txt file4.sl
+  587  mv file4.txt file5.txt
+  588  diff file4.txt file4.sl
+  589  diff file5.txt file4.sl
+  590  cat file5.txt
+  591  file4.sl
+  592  cat file4.sl
+  593  history > history.txt
