@@ -1,0 +1,111 @@
+  499  cat history.txt
+  500  ls
+  501  cd Desktop/
+  502  cd os
+  503  touch f1.txt
+  504  nano f1.txt
+  505  touch f2.txt
+  506  ln f2 f1
+  507  ln f2.txt f1.txt
+  508  ln f1.txt f3.txt
+  509  cat f3.txt 
+  510  ln f1.txt f2.txt
+  511  echo ''goodbye' > f3.txt
+echo 'goodbye' > f3.txt
+  512  echo 'goodbye' > f3.txt
+  513  cat f3.txt 
+  514  cat f1.txt 
+  515  ln f1.txt f4.txt
+  516  cat f4.txt 
+  517  echo 'how are you?' > f4.txt 
+  518  cat f1.txt 
+  519   ln -s f1.txt f5.txt
+  520  cat f5.txt 
+  521  rm f1.txt 
+  522  cat f5.txt 
+  523  ls -l
+  524  echo 'pippo' > f5.txt
+  525  cat f5.txt 
+  526  ls -l
+  527  cat f1.txt 
+  528  cat f3.txt 
+  529  rm f1.txt 
+  530  ln f3.txt  f1.txt
+  531  ls -l
+  532  echo 'pippo pippo' > f5.txt
+  533  cat f1.txt 
+  534  cat f3.txt 
+  535  history
+  536  ls
+  537  touch input.txt
+  538  nano input.txt 
+  539  cat input.txt 
+  540  ./odd_even.sh input.txt 
+  541  chmod +x odd_even.sh 
+  542  ls -al
+  543  ./odd_even.sh input.txt 
+  544  ./odd_even.sh input.txt 
+  545  ./odd_even.sh input.txt 
+  546  chmod +x odd_even.sh 
+  547  ./odd_even.sh input.txt 
+  548  ./odd_even.sh input.txt 
+  549  ./odd_even.sh input.txt 
+  550  ./odd_even.sh input.txt 
+  551  cat input.txt 
+  552  ls
+  553  ls -l
+  554  chmod +x 20200914e_ex10.sh 
+  555  ./20200914e_ex10.sh input.txt 
+  556  ./odd_even.sh input.txt 
+  557  ./odd_even.sh input.txt 
+  558  ./odd_even.sh input.txt 
+  559  ./odd_even.sh input.txt 
+  560  ls
+  561  gcc -Wall signal_handler.c -o e02
+  562  ./e02
+  563  gcc -Wall signal_handler.c -o hello
+  564  ./hello
+  565  gcc -Wall signal_handler.c 
+  566  touch file.txt
+  567  nano file.txt
+  568  cat file.txt 
+  569  ls
+  570  ls -l
+  571  chmod 744 longest.sh 
+  572  ls -l
+  573  ./longest.sh 
+  574  ./longest.sh 
+  575  ./longest.sh 
+  576  ./longest.sh 
+  577  touch result.txt
+  578  ./longest.sh 
+  579  ./longest.sh 
+  580  ./longest.sh 
+  581  cat result.txt 
+  582  ./longest.sh result.txt 
+  583  ./longest.sh result.txt 
+  584  cat result.txt 
+  585  ./longest.sh result.txt 
+  586  cat result.txt 
+  587  ./longest.sh result.txt 
+  588  cat result.txt 
+  589  ls -l
+  590  chmod 744 result.txt 
+  591  ./longest.sh result.txt 
+  592  ls -l
+  593  cat result.txt 
+  594  cat longest.sh 
+  595  ./longest.sh result.txt 
+  596  ./longest.sh result.txt 
+  597  cat longest.sh 
+  598  cat result.txt 
+  599  ./longest.sh result.txt 
+  600  cat result.txt 
+  601  ./longest.sh result.txt 
+  602  cat result.txt 
+  603  ./longest.sh result.txt 
+  604  cat result.txt 
+  605  cat longest.sh 
+  606  ls
+  607  history
+  608  history 561

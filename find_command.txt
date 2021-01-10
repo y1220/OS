@@ -1,0 +1,57 @@
+  115  history
+  116  history n
+  117  history 115
+  118  history 561
+  119  gcc -Wall two_child.c -o child
+  120  ./child
+  121  ls -l
+  122  chmod +x two_child.c 
+  123  gcc -Wall two_child.c -o child
+  124  ls -l
+  125  ./child
+  126  ./child 2 2
+  127  ps -e
+  128  ps -l
+  129  ./child 2 2
+  130  ps -l
+  131  ./child 3 2
+  132  ./child 1 2
+  133  ./child 2 2
+  134  ./child 2 5
+  135  ./child 2 10
+  136  ls -l
+  137  mkdir tmp
+  138  ls -l
+  139  find -type d
+  140  find -type -d
+  141  find home/user -type -d
+  142  find home/user -type d
+  143  pwd
+  144  .
+  145  find /Users/fit2you/Desktop/os -type d
+  146  find /Users/fit2you/Desktop/os -type f
+  147  find /Users/fit2you/Desktop/os/ -type f
+  148  find /Users/fit2you/Desktop/os/ -type f| -name "*.txt"
+  149  find /Users/fit2you/Desktop/os/ -type f -name "*.txt"
+  150  find /Users/fit2you/Desktop/os/ -type f -name "*.txt" -o "*.sh" 
+  151  find /Users/fit2you/Desktop/os/ -type f -name "*.txt" -o -name "*.sh" 
+  152  find /Users/fit2you/Desktop/os/ -type f (-name "*.txt" -o -name "*.sh") 
+  153  find /Users/fit2you/Desktop/os/ -type f /(-name "*.txt" -o -name "*.sh"/) 
+  154  find /Users/fit2you/Desktop/os/ -type f \(-name "*.txt" -o -name "*.sh"\) 
+  155  find /Users/fit2you/Desktop/os/ -type f   \(-name "*.txt" -o -name "*.sh" \) 
+  156  find /Users/fit2you/Desktop/os/ -type f   \( -name "*.txt" -o -name "*.sh" \) 
+  157  find /Users/fit2you/Desktop/os -type f   \( -name "*.txt" -o -name "*.sh" \) -size -1M 
+  158  ls -l
+  159  find /Users/fit2you/Desktop/os -type f   \( -name "*.txt" -o -name "*.sh" \) -size -7 
+  160  find /Users/fit2you/Desktop/os -type f   \( -name "*.txt" -o -name "*.sh" \) -size +7 
+  161  find /Users/fit2you/Desktop/os -type f   \( -name "*.txt" -o -name "*.sh" \) -size +7 -perm 755 
+  162  find /Users/fit2you/Desktop/os -type f   \( -name "*.txt" -o -name "*.sh" \) -size +7 -perm 654
+  163  find /Users/fit2you/Desktop/os -type f   \( -name "*.txt" -o -name "*.sh" \)  -perm 654
+  164  find /Users/fit2you/Desktop/os -type f   \( -name "*.txt" -o -name "*.sh" \)  -perm 755
+  165  history
+  166  touch history2.txt
+  167  nano history2.txt 
+  168  cat history2.txt 
+  169  history
+  170  touch find_command.txt
+  171  history > find_command.txt 
