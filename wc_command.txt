@@ -1,0 +1,15 @@
+1. count the number of files/directories contained in your “home” directory (do not analyze sub-directories)
+# -w, --words: print words counts.
+# -l, --lines: print the newline counts.
+
+ls | wc -l
+ls -a /Users/fit2you/Desktop/os | wc -w
+
+2. after downloading the file test.txt in a directory, print the total number of strings in the file.
+
+cat test.txt | wc -l
+
+3. count the number of active processes in the system who are owned by the user “root”
+
+# ps -u username -> see the index of the process owned by the selected user
+ps -u root | wc -l
