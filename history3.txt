@@ -1,0 +1,47 @@
+fit2you@192 ~/Desktop/os -  $ cp * /Users/fit2you/Desktop/os2
+cp: file2.sl: No such file or directory
+cp: file4.sl: No such file or directory
+cp: tmp is a directory (not copied).
+fit2you@192 ~/Desktop/os -  $ cat hello.c
+#include <stdio.h>
+#include <stdlib.h>
+
+int
+main()
+{
+  char str[20];
+  int age;
+
+  fprintf(stdout, "insert your name\n");
+  fscanf(stdin, "%s", str);
+  
+  fprintf(stdout, "insert your age\n");
+  fscanf(stdin, "%d", &age);
+
+  fprintf(stdout, "name: %s\t age: %d\n", str, age);
+  
+fit2you@192 ~/Desktop/os -  $ gcc -o -hello2 hello.c 
+fit2you@192 ~/Desktop/os -  $ ./hello2
+-bash: ./hello2: No such file or directory
+fit2you@192 ~/Desktop/os -  $ ./-hello2
+insert your name
+tomato
+insert your age
+100
+name: tomato	 age: 100
+fit2you@192 ~/Desktop/os -  $ cat memo.txt
+cat: memo.txt: No such file or directory
+fit2you@192 ~/Desktop/os -  $ touch memo.txt
+fit2you@192 ~/Desktop/os -  $ nano
+fit2you@192 ~/Desktop/os -  $ 
+fit2you@192 ~/Desktop/os -  $ cat memo.txt 
+here is memo.txt inside!
+
+
+fit2you@192 ~/Desktop/os -  $ echo 'add this line ;)' > memo.txt 
+fit2you@192 ~/Desktop/os -  $ cat memo.txt 
+add this line ;)
+fit2you@192 ~/Desktop/os -  $ echo 'add this line (append);)' >> memo.txt 
+fit2you@192 ~/Desktop/os -  $ cat memo.txt 
+add this line ;)
+add this line (append);)
