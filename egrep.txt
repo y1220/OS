@@ -1,0 +1,42 @@
+fit2you@192 ~/Desktop/os -  $ egrep  "2020" memo.txt 
+20200117
+##20200117
+fit2you@192 ~/Desktop/os -  $ egrep  "2020" "add" memo.txt 
+egrep: add: No such file or directory
+memo.txt:20200117
+memo.txt:##20200117
+fit2you@192 ~/Desktop/os -  $ egrep -e "2020" -e  "add" memo.txt 
+add this line ;)
+add this line (append);)
+20200117
+##20200117
+fit2you@192 ~/Desktop/os -  $ egrep  "2020" -e  "add" memo.txt 
+egrep: 2020: No such file or directory
+memo.txt:add this line ;)
+memo.txt:add this line (append);)
+fit2you@192 ~/Desktop/os -  $ egrep -e "2020" -e  "add" memo.txt 
+add this line ;)
+add this line (append);)
+20200117
+##20200117
+fit2you@192 ~/Desktop/os -  $ egrep   "(*)" memo.txt 
+egrep: repetition-operator operand invalid
+fit2you@192 ~/Desktop/os -  $ egrep   "( )" memo.txt 
+add this line ;)
+add this line (append);)
+fit2you@192 ~/Desktop/os -  $ egrep   "( " memo.txt 
+egrep: parentheses not balanced
+fit2you@192 ~/Desktop/os -  $ egrep   "(" memo.txt 
+egrep: parentheses not balanced
+fit2you@192 ~/Desktop/os -  $ (.*)
+-bash: .: ..: is a directory
+fit2you@192 ~/Desktop/os -  $ egrep   "(.*)" memo.txt 
+add this line ;)
+add this line (append);)
+20200117
+##20200117
+goodbye.txt
+fit2you@192 ~/Desktop/os -  $ egrep   "\(.*\)" memo.txt 
+add this line (append);)
+fit2you@192 ~/Desktop/os -  $ 
+
