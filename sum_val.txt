@@ -1,0 +1,41 @@
+fit2you@192 ~/Desktop/os -  $ num=$[3+4]
+fit2you@192 ~/Desktop/os -  $ num
+-bash: num: command not found
+fit2you@192 ~/Desktop/os -  $ echo num
+num
+fit2you@192 ~/Desktop/os -  $ echo $num
+7
+fit2you@192 ~/Desktop/os -  $ num2=$[num+10]
+fit2you@192 ~/Desktop/os -  $ echo $num2
+17
+fit2you@192 ~/Desktop/os -  $ echo $[num2*2]
+34
+fit2you@192 ~/Desktop/os -  $ val1, val2, val3, val4=$(echo "good afternoon my friends" | cut -d " ")
+usage: cut -b list [-n] [file ...]
+       cut -c list [file ...]
+       cut -f list [-s] [-d delim] [file ...]
+-bash: val1,: command not found
+fit2you@192 ~/Desktop/os -  $ val2=$(echo "good afternoon my friends" | cut -d " " -f 2)
+fit2you@192 ~/Desktop/os -  $ echo $val2
+afternoon
+fit2you@192 ~/Desktop/os -  $ val1=$(echo "good afternoon my friends" | cut -d " " -f 1)
+fit2you@192 ~/Desktop/os -  $ val3=$(echo "good afternoon my friends" | cut -d " " -f 3)
+fit2you@192 ~/Desktop/os -  $ val4=$(echo "good afternoon my friends" | cut -d " " -f 4)
+fit2you@192 ~/Desktop/os -  $ val=$val1 $val2
+-bash: afternoon: command not found
+fit2you@192 ~/Desktop/os -  $ val="$val1 $val2"
+fit2you@192 ~/Desktop/os -  $ val
+-bash: val: command not found
+fit2you@192 ~/Desktop/os -  $ echo $val
+good afternoon
+fit2you@192 ~/Desktop/os -  $ val="$val1 $val2 $val3 $val4"
+fit2you@192 ~/Desktop/os -  $ echo val
+val
+fit2you@192 ~/Desktop/os -  $ echo $val
+good afternoon my friends
+fit2you@192 ~/Desktop/os -  $ rep=$(echo "morning")
+fit2you@192 ~/Desktop/os -  $ val="$val1 $rep $val3 $val4"
+fit2you@192 ~/Desktop/os -  $ echo $val
+good morning my friends
+fit2you@192 ~/Desktop/os -  $ 
+
