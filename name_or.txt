@@ -1,0 +1,29 @@
+fit2you@192 ~/Desktop/os -  $ find . -name try1*
+./try1.c
+fit2you@192 ~/Desktop/os -  $ find . -name try1* -name try2
+fit2you@192 ~/Desktop/os -  $ find . -name try1* -o -name try2
+./try1.c
+fit2you@192 ~/Desktop/os -  $ find . -name try1* -o -name try2*
+./try2.c
+./try1.c
+fit2you@192 ~/Desktop/os -  $ find . \(-name try1* -o -name try2*\)
+find: -o: no expression before -o
+fit2you@192 ~/Desktop/os -  $ find . \(-name "try1*" -o -name "try2*"\)
+find: -o: no expression before -o
+fit2you@192 ~/Desktop/os -  $ find . \( -name "try1*" -o -name "try2*"\)
+find: (: missing closing ')'
+fit2you@192 ~/Desktop/os -  $ find . \( -name "try1*" -o -name "try2*" \)
+./try2.c
+./try1.c
+fit2you@192 ~/Desktop/os -  $ find .  -name try1* | try2*
+-bash: try2.c: command not found
+fit2you@192 ~/Desktop/os -  $ find .  -name "(try1*) | (try2*) "
+fit2you@192 ~/Desktop/os -  $ find .  -name " (try1*) | (try2*) "
+fit2you@192 ~/Desktop/os -  $ find .  -name " (try1*)|(try2*) "
+fit2you@192 ~/Desktop/os -  $ find .  -name "(try1*)|(try2*)"
+fit2you@192 ~/Desktop/os -  $ find .  -name "(*try1*)|(*try2*)"
+fit2you@192 ~/Desktop/os -  $ find .  -name '(*try1*)|(*try2*)'
+fit2you@192 ~/Desktop/os -  $ find .  -name '(*try1*) || (*try2*)'
+fit2you@192 ~/Desktop/os -  $ find .  -name "(*try1*) || (*try2*)"
+fit2you@192 ~/Desktop/os -  $ find .  -name ("*try1*") || ("*try2*")
+-bash: syntax error near unexpected token `('
