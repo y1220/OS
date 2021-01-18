@@ -1,0 +1,26 @@
+fit2you@192 \cf3 ~/Desktop/os - \cf2  $ ls -l try*
+-rw-r--r--  1 fit2you  staff   109 Jan 17 18:07 try1.c
+-rw-r--r--  1 fit2you  staff   104 Jan 17 17:56 try2.c
+-rwxr-xr-x  1 fit2you  staff  8700 Jan 17 18:05 try3
+-rw-r--r--@ 1 fit2you  staff   331 Jan 17 18:10 try3.c
+fit2you@192 \cf3 ~/Desktop/os - \cf2  $ find . -name "try*" -exec chmod +x \\\{\}\\;\
+find: -exec: no terminating ";" or "+"\
+fit2you@192 \cf3 ~/Desktop/os - \cf2  $ find . -name "try*" -exec chmod +x \\\{\} \\;\
+fit2you@192 \cf3 ~/Desktop/os - \cf2  $ ls -l try*
+-rwxr-xr-x  1 fit2you  staff   109 Jan 17 18:07 try1.c
+-rwxr-xr-x  1 fit2you  staff   104 Jan 17 17:56 try2.c
+-rwxr-xr-x  1 fit2you  staff  8700 Jan 17 18:05 try3
+-rwxr-xr-x@ 1 fit2you  staff   331 Jan 17 18:10 try3.c
+fit2you@192 ~/Desktop -  $ ls ex*
+exec_chmod.rtf
+fit2you@192 ~/Desktop -  $ mv exec_chmod.rtf exec_chmod.txt
+fit2you@192 ~/Desktop -  $ ls ex*
+exec_chmod.txt
+fit2you@192 ~/Desktop -  $ nano exec_chmod.txt 
+fit2you@192 ~/Desktop -  $ mv exec_chmod.txt os
+fit2you@192 ~/Desktop -  $ ls ex*
+ls: ex*: No such file or directory
+fit2you@192 ~/Desktop -  $ cd os
+fit2you@192 ~/Desktop/os -  $ ls ex*
+exec_chmod.txt
+
