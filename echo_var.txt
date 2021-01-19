@@ -52,3 +52,8 @@ number: 50
 fit2you@192 ~/Desktop/os -  $ echo "number: ${var}"
 number: 50
 
+c=$(echo 'hello' | tr [:lower:] [:upper:])
+a=$(echo 'hello' | tr [:lower:] [:upper:])
+
+with or without '', anyways works same
+
