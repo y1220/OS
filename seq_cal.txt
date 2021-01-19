@@ -1,0 +1,27 @@
+fit2you@192 ~/Desktop/os -  $ seq 1 5
+1
+2
+3
+4
+5
+fit2you@192 ~/Desktop/os -  $ echo $(seq 1 5)
+1 2 3 4 5
+fit2you@192 ~/Desktop/os -  $ a=$(echo 'hello' | tr '[:lower:]' '[:upper:]')
+fit2you@192 ~/Desktop/os -  $ echo $a
+HELLO
+fit2you@192 ~/Desktop/os -  $ echo "42 - 10 is...$(( 42 - 10))"
+42 - 10 is...32
+fit2you@192 ~/Desktop/os -  $ a=$(echo 'hello' | tr '[:lower:]' '[:upper:]' )
+fit2you@192 ~/Desktop/os -  $ b=$(echo 'hello' | tr '[:lower:]' '[:upper:]' )
+fit2you@192 ~/Desktop/os -  $ echo $b
+HELLO
+fit2you@192 ~/Desktop/os -  $ #bc command to do calculation
+fit2you@192 ~/Desktop/os -  $ echo "1/3" | bc -l
+.33333333333333333333
+fit2you@192 ~/Desktop/os -  $ echo "4*6" | bc -l
+24
+fit2you@192 ~/Desktop/os -  $ echo "4*6" | bc 
+24
+fit2you@192 ~/Desktop/os -  $ echo "1/3" | bc 
+0
+

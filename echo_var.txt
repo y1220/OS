@@ -1,0 +1,54 @@
+fit2you@192 ~/Desktop/os -  $ n= $( echo "hello" | wc )
+-bash: 1: command not found
+fit2you@192 ~/Desktop/os -  $ n= $( echo "hello" | wc  -w )
+-bash: 1: command not found
+fit2you@192 ~/Desktop/os -  $ n= $(echo "hello" | wc  -w )
+-bash: 1: command not found
+fit2you@192 ~/Desktop/os -  $ h= "hello"
+-bash: hello: command not found
+fit2you@192 ~/Desktop/os -  $ h= echo "hello"
+hello
+fit2you@192 ~/Desktop/os -  $ h
+-bash: h: command not found
+fit2you@192 ~/Desktop/os -  $ $h
+fit2you@192 ~/Desktop/os -  $ cat $h
+
+
+^C
+fit2you@192 ~/Desktop/os -  $ cat h
+cat: h: No such file or directory
+fit2you@192 ~/Desktop/os -  $ cat $h
+^C
+fit2you@192 ~/Desktop/os -  $ h="hello"
+fit2you@192 ~/Desktop/os -  $ h
+-bash: h: command not found
+fit2you@192 ~/Desktop/os -  $ cat h
+cat: h: No such file or directory
+fit2you@192 ~/Desktop/os -  $ var_a="Hello World"
+fit2you@192 ~/Desktop/os -  $ echo $var_a
+Hello World
+fit2you@192 ~/Desktop/os -  $ n=$( echo $var_a | wc  -w )
+fit2you@192 ~/Desktop/os -  $ echo $n
+2
+fit2you@192 ~/Desktop/os -  $ var_a="Hello World hello friends"
+fit2you@192 ~/Desktop/os -  $ n=$( echo $var_a | wc  -w )
+fit2you@192 ~/Desktop/os -  $ echo $n
+4
+fit2you@192 ~/Desktop/os -  $ var=50
+fit2you@192 ~/Desktop/os -  $ echo $val
+
+fit2you@192 ~/Desktop/os -  $ echo $var
+50
+fit2you@192 ~/Desktop/os -  $ echo $var var_a$
+50 var_a$
+fit2you@192 ~/Desktop/os -  $ echo $var $var_a
+50 Hello World hello friends
+fit2you@192 ~/Desktop/os -  $ echo '$var'
+$var
+fit2you@192 ~/Desktop/os -  $ echo "$var"
+50
+fit2you@192 ~/Desktop/os -  $ echo "number: $var"
+number: 50
+fit2you@192 ~/Desktop/os -  $ echo "number: ${var}"
+number: 50
+
