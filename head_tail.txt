@@ -1,0 +1,32 @@
+fit2you@192 ~/Desktop/os -  $ seq 10 > numbers.txt
+fit2you@192 ~/Desktop/os -  $ head -3 numbers.txt
+1
+2
+3
+fit2you@192 ~/Desktop/os -  $ head +3 numbers.txt
+head: +3: No such file or directory
+==> numbers.txt <==
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+fit2you@192 ~/Desktop/os -  $ tail -3 numbers.txt
+8
+9
+10
+fit2you@192 ~/Desktop/os -  $ tail +3 numbers.txt
+3
+4
+5
+6
+7
+8
+9
+10
+
