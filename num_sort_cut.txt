@@ -1,0 +1,51 @@
+fit2you@fit2yous-MBP ~/Desktop/os -  $ cat num.txt 
+1 2
+2 5
+3 7
+4 3
+5 1
+6 9
+7 4
+8 8
+9 10
+10 6
+fit2you@fit2yous-MBP ~/Desktop/os -  $ cat num.txt | sort -t " " -k 2
+5 1
+9 10
+1 2
+4 3
+7 4
+2 5
+10 6
+3 7
+8 8
+6 9
+fit2you@fit2yous-MBP ~/Desktop/os -  $ cat num.txt | sort -t " " -k 2 -n
+5 1
+1 2
+4 3
+7 4
+2 5
+10 6
+3 7
+8 8
+6 9
+9 10
+fit2you@fit2yous-MBP ~/Desktop/os -  $ cat num.txt | cut -d " " -f 2 
+2
+5
+7
+3
+1
+9
+4
+8
+10
+6
+fit2you@fit2yous-MBP ~/Desktop/os -  $ cat num.txt | cut -d " " -f 2 | tail +5
+1
+9
+4
+8
+10
+6
