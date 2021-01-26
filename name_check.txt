@@ -1,0 +1,28 @@
+fit2you@fit2yous-MBP ~/Desktop/os -  $ name=$(echo "yui")
+fit2you@fit2yous-MBP ~/Desktop/os -  $ surname=$(echo "watanabe")
+fit2you@fit2yous-MBP ~/Desktop/os -  $ full=$surname" "$name
+fit2you@fit2yous-MBP ~/Desktop/os -  $ echo $full
+watanabe yui
+fit2you@fit2yous-MBP ~/Desktop/os -  $ echo $full | egrep "yui"
+watanabe yui
+fit2you@fit2yous-MBP ~/Desktop/os -  $ $?
+-bash: 0: command not found
+fit2you@fit2yous-MBP ~/Desktop/os -  $ echo $full | egrep "yui"
+watanabe yui
+fit2you@fit2yous-MBP ~/Desktop/os -  $ echo $?
+0
+fit2you@fit2yous-MBP ~/Desktop/os -  $ echo $full | egrep "yuo"
+fit2you@fit2yous-MBP ~/Desktop/os -  $ echo $?
+1
+fit2you@fit2yous-MBP ~/Desktop/os -  $ echo $full | egrep -e "yuo" -e "wat"
+watanabe yui
+fit2you@fit2yous-MBP ~/Desktop/os -  $ echo $?
+0
+fit2you@fit2yous-MBP ~/Desktop/os -  $ echo $full | egrep -e "yuo" | -e "wat"
+-bash: -e: command not found
+fit2you@fit2yous-MBP ~/Desktop/os -  $ echo $full | egrep  "yuo" | egrep  "wat"
+fit2you@fit2yous-MBP ~/Desktop/os -  $ echo $full | egrep  "yui" | egrep  "wat"
+watanabe yui
+fit2you@fit2yous-MBP ~/Desktop/os -  $ echo $?
+0
+fit2you@fit2yous-MBP ~/Desktop/os -  $ 
