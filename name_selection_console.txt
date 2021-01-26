@@ -1,0 +1,24 @@
+fit2you@fit2yous-MBP ~/Desktop/os -  $ egrep -e "^[1-9]\ " -e "^1[0-9]\ " -e "^2[0-1]"  name_selection.txt 
+20 stefano 12.5 x
+21 gabriele 13.9 y
+15 giulia 7.4 x
+2 giorgia 14 x
+fit2you@fit2yous-MBP ~/Desktop/os -  $ cat name_selection.txt 
+20 stefano 12.5 x
+21 gabriele 13.9 y
+15 giulia 7.4 x
+2 giorgia 14 x
+25 giorgio 14.4 x
+fit2you@fit2yous-MBP ~/Desktop/os -  $ egrep -e "^[1-9]\ " -e "^1[0-9]\ " -e "^2[0-1]"  name_selection.txt | egrep -e "[1-9][0-9]*\.[0-9]"
+20 stefano 12.5 x
+21 gabriele 13.9 y
+15 giulia 7.4 x
+fit2you@fit2yous-MBP ~/Desktop/os -  $ egrep -e "^[1-9]\ " -e "^1[0-9]\ " -e "^2[0-1]"  name_selection.txt | egrep -e "[1-9][0-9]*\.[0-9]" | egrep "x$"
+20 stefano 12.5 x
+15 giulia 7.4 x
+fit2you@fit2yous-MBP ~/Desktop/os -  $ egrep -e "^[1-9]\ " -e "^1[0-9]\ " -e "^2[0-1]"  name_selection.txt | egrep -e "[1-9][0-9]*\.[0-9]" | egrep "x$" | cut -d " " -f 2,4 
+stefano x
+giulia x
+fit2you@fit2yous-MBP ~/Desktop/os -  $ egrep -e "^[1-9]\ " -e "^1[0-9]\ " -e "^2[0-1]"  name_selection.txt | egrep -e "[1-9][0-9]*\.[0-9]" | egrep "x$" | cut -d " " -f 2,3 
+stefano 12.5
+giulia 7.4
