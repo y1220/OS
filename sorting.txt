@@ -1,0 +1,14 @@
+fit2you@192 ~/Desktop/os -  $ touch name_list.txt
+fit2you@192 ~/Desktop/os -  $ nano name_list.txt
+fit2you@192 ~/Desktop/os -  $ catch name_list.txt 
+-bash: catch: command not found
+fit2you@192 ~/Desktop/os -  $ cat name_list.txt 
+tomato 4
+banana 1
+Kyuri 9
+Ichigo 3
+fit2you@192 ~/Desktop/os -  $ cat name_list.txt | sort -t " " -k 2
+banana 1
+Ichigo 3
+tomato 4
+Kyuri 9
