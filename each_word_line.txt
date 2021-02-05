@@ -1,0 +1,21 @@
+fit2you@192 ~/Desktop/os -  $ cat hellohello.txt 
+hellohellohello
+fit2you@192 ~/Desktop/os -  $ cat hellohello.txt | tr "o" '\n' 
+hell
+hell
+hell
+
+fit2you@192 ~/Desktop/os -  $ cat hellohello.txt | tr "o" '\n' | l o
+-bash: l: command not found
+fit2you@192 ~/Desktop/os -  $ cat hellohello.txt | tr "o" '\n' | tr l o
+heoo
+heoo
+heoo
+
+fit2you@192 ~/Desktop/os -  $ cat hellohello.txt | tr "o" '\n' | tr l o | tr '\n' " "
+heoo heoo heoo  fit2you@192 ~/Desktop/os -  $ echo "hello hello my friends" | tr " " "\n"
+hello
+hello
+my
+friends
+fit2you@192 ~/Desktop/os -  $ 
